@@ -10,6 +10,129 @@
      color: green;
 }
 
+.banner {
+     display: block;
+     background-image: url('../images/ba1.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     /*
+     position: absolute;
+     top: 20%;
+     left: 0;
+     */
+}
+   
+.banner-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-end;
+     height: 100%;
+     text-align: center;
+     color: #fff;
+     font-size: 0.9em;
+     padding-right: 2%;
+}
+
+.banner-content h1 {
+     font-size: 2em;
+     margin-bottom: 0.5em;
+}
+
+.banner-content p {
+     margin-bottom: 1em;
+     text-align: right;
+     width: 50%;
+}
+
+.banner button {
+     border-radius: 1px;
+     padding: 0.2em 1em;
+}
+
+/*
+.banner::before {
+     content: "";
+     display: block;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0,0,0,0.5); /* color de la capa oscura */
+ /*
+     position: absolute;
+     top: 0;
+     left: 0;
+   }
+*/
+
+.transparent-button {
+     background-color: transparent;
+     border: 2px solid #fff;
+     color: #fff;
+     margin-right: 1em;
+}
+
+.green-button {
+     background-color: #4ac360;
+     border: none;
+     color: #fff;
+}
+   
+
+#badge-yellow {
+     background-color: yellow;
+     color: black;
+     margin-bottom: 0.5rem!important;
+}
+
+#badge-cian {
+     background-color: rgb(51, 164, 190);
+     color: white;
+     margin-bottom: 0.5rem!important;
+}
+#badge-red {
+     background-color: red;
+     color: white;
+     margin-bottom: 0.5rem!important;
+}
+
+#info h2 {
+     padding: 0%;
+     margin-bottom: 0% !important;
+}
+
+#img-info {
+     padding: 0%;
+}
+
+#text-info{
+     padding: 2%;
+     margin: 0%;
+     background-color: rgb(46, 46, 46) !important;
+     color: white;
+     text-align: left;
+     font-size: 0.8em;
+}
+
+
+
 #texto-formulario {
      text-align: center;
+}
+
+footer {
+     background: rgb(30,78,131);
+     background: linear-gradient(90deg, rgba(30,78,131,1) 0%, rgba(1,119,143,1) 100%);
+}
+
+footer a {
+     color: white;
+     font-size: 0.8em;
+     transition: all 0.3s ease;
+}
+
+footer a:hover {
+     text-decoration: none;
+     color: rgb(242, 255, 0);
+     font-size: 1em;
 }
