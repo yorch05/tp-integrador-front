@@ -38,26 +38,16 @@
 
     <!-- Contenido principal -->
     <div class="container mt-4">
-      
-
-
-          <section id="banner" class="py-5">
-               <div class="position-relative">
-                    <img src="images/ba1.jpg" class="img-fluid w-100" alt="Imagen de fondo">
-                    <div class="overlay"></div>
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-                         <h2>Conf Bs As</h2>
-                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestro comunidad el conocimiento y experiencia de los expertos que están creado el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
-                         <div class="mt-4">
-                              <a href="#" class="btn btn-outline-light border rounded-pill px-4 me-3">Quiero ser orador</a>
-                              <a href="#" class="btn btn-success rounded-pill px-4">Comprar tickets</a>
-                         </div>
+          <section class="banner">
+               <div class="banner-content">
+                    <h1>Conf Bs As</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestro comunidad el conocimiento y experiencia de los expertos que están creado el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
+                    <div>
+                         <button class="transparent-button">Quiero ser orador</button>
+                         <button class="green-button">Comprar tickets</button>
                     </div>
                </div>
           </section>
-        
-
-
 
           <section id="oradores" class="py-5">
                <div class="container">
@@ -67,8 +57,8 @@
                               <div class="card h-100 shadow-sm">
                                    <img src="images/steve.jpg" class="card-img-top" alt="Orador 1">
                                    <div class="card-body">
-                                        <span class="badge badge-primary mb-2">Javascript</span>
-                                        <span class="badge badge-secondary mb-2">React</span>
+                                        <span class="badge" id="badge-yellow">Javascript</span>
+                                        <span class="badge" id="badge-cian">React</span>
                                         <h5 class="card-title">Steve Jobs</h5> 
                                         <p class="card-text">Descripción del orador 1.</p>
                                    </div>
@@ -78,8 +68,8 @@
                               <div class="card h-100 shadow-sm">
                                    <img src="images/bill.jpg" class="card-img-top" alt="Orador 2">
                                    <div class="card-body">
-                                        <span class="badge badge-primary mb-2">Javascript</span>
-                                        <span class="badge badge-secondary mb-2">React</span>
+                                        <span class="badge" id="badge-yellow">Javascript</span>
+                                        <span class="badge" id="badge-cian">React</span>
                                         <h5 class="card-title">Bill Gates</h5>
                                         <p class="card-text">Descripción del orador 2.</p>
                                    </div>
@@ -89,8 +79,8 @@
                               <div class="card h-100 shadow-sm">
                                    <img src="images/ada.jpeg" class="card-img-top" alt="Orador 3">
                                    <div class="card-body">
-                                        <span class="badge badge-primary mb-2">Negocios</span>
-                                        <span class="badge badge-secondary mb-2">Startups</span>
+                                        <span class="badge badge-secondary mb-2">Negocios</span>
+                                        <span class="badge" id="badge-red">Startups</span>
                                         <h5 class="card-title">Ada Lovelace</h5>
                                         <p class="card-text">Descripción del orador 3.</p>
                                    </div>
@@ -104,14 +94,16 @@
           <section id="info" class="py-5">
                <div class="container">
                     <div class="row">
-                         <div class="col-md-6">
+                         <div class="col-md-6" id="img-info">
                               <img src="images/honolulu.jpg" class="img-fluid" alt="Imagen">
                          </div>
-                         <div class="col-md-6 bg-light">
-                              <div class="d-flex flex-column h-100 justify-content-center align-items-center px-5">
-                                   <h2 class="text-center mb-4">Bs As Octubre</h2>
-                                   <p class="text-center mb-5">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                                   <a href="#" class="btn btn-primary">Conocé más</a>
+                         <div class="col-md-6 bg-light" id="text-info">
+                              <div class="d-flex flex-column h-100 px-5">
+                                   <h2 class="text-left mb-4">Bs As Octubre</h2>
+                                   <p class="text-left mb-5">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).
+                                   <br><br>
+                                   <a href="#" class="transparent-button">Conocé más</a>
+                                   </p>
                               </div>
                          </div>
                     </div>
@@ -148,25 +140,39 @@
                     </div>
                </div>
           </section>
-             
-   
-
 
     </div>
 
     <!-- Footer -->
-     <footer class="bg-dark text-white py-3">
+
+     <footer class="bg-gradient-to-r from-teal-500 to-teal-400 py-5">
           <div class="container">
-               <div class="row">
-                    <div class="col-md-6">
-                         <p>Mi sitio web &copy; 2023</p>
-                         </div>
-                         <div class="col-md-6 text-md-right">
-                         <p>Desarrollado por mi</p>
+               <div class="row text-center">
+                    <div class="col-md-1">
+                         <a href="#">Preguntas frecuentes</a>
+                    </div>
+                    <div class="col-md-2">
+                         <a href="#contacto">Contáctanos</a>
+                    </div>
+                    <div class="col-md-2">
+                         <a href="#">Prensa</a>
+                    </div>
+                    <div class="col-md-2">
+                         <a href="#">Conferencias</a>
+                    </div>
+                    <div class="col-md-1">
+                         <a href="#">Términos y condiciones</a>
+                    </div>
+                    <div class="col-md-2">
+                         <a href="#">Privacidad</a>
+                    </div>
+                    <div class="col-md-2">
+                         <a href="#">Estudiantes</a>
                     </div>
                </div>
           </div>
      </footer>
+        
 
     <!-- Enlazamos los scripts de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -174,4 +180,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
-
